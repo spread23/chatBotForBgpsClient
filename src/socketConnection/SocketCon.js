@@ -5,7 +5,7 @@ import { setConversations, setConversationHistory } from '../Dashboard/dashboard
 let socket;
 
 export const ConnectWithSocketServer = () => {
-    socket = io('http://localhost:5000');
+    socket = io('https://api-server-for-bgps.onrender.com');
     socket.on('connect', () => {
         console.log('Connect with socket server');
         console.log(socket.id);
