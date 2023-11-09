@@ -3,6 +3,7 @@ import { UseSelector, useSelector } from 'react-redux';
 import Messages from './Messages';
 import NewMessageInput from './NewMessageInput';
 
+
 const ChatLogo = () => {
     return (
         <div className='chat_gpt_logo_container'>

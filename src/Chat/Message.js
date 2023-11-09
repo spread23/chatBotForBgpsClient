@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 
+import Markdown from 'react-markdown';
+
 import {GrUser} from 'react-icons/gr';
 import {FcMindMap} from 'react-icons/fc';
 
@@ -22,7 +24,7 @@ const SlowText = (props) => {
 
     }, [speed, placeholder, text]);
 
-    return <span>{placeholder}</span>
+    return <Markdown>{placeholder}</Markdown>
 }
 
 const Message = ({content,   aiMessage, animate}) => {
@@ -35,7 +37,7 @@ const Message = ({content,   aiMessage, animate}) => {
                 {aiMessage ? <FcMindMap /> : <GrUser />}
             </div>
             <p className='message_text'>
-                {animate ? <SlowText speed={80} text={content} /> : content}
+               {animate ? <SlowText speed={30} text={content} /> : <Markdown>{content}</Markdown>}
             </p>
         </div>
     );
