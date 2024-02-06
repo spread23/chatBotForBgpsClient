@@ -204,9 +204,10 @@
     }
   }
 
-  @media only screen and (max-width: 950px) {
+   @media only screen and (max-width: 950px) {
+
     .new_message_input {
-        width: 95%;
+        width: 70%;
     }
 
     .new_message_icon_container {
@@ -214,10 +215,17 @@
     }
 
     .sidebar_container {
-       width: 50px;
+       width: 25%;
+       height: 100%;
+       padding: 0;
+       margin: 0;
     }
 
     .chat_container {
-        max-width: calc(100% - 50px);
+        /*max-width: calc(100% - 50px);*/
+        width: 75%;
+        padding: 0;
+        margin: 0;
+        height: 96%;
     }
 }
